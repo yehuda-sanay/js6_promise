@@ -63,3 +63,30 @@
 //     }
 // }
 // callSella()
+
+
+
+
+
+//fetch
+
+//שאלה 1
+
+
+const API="https://moviesmern.herokuapp.com/movies/all"
+async function sonefunc(){
+    document.getElementById("button_id").disabled = true
+    try{
+        await fetch(`${API}`).then((Response)=>{console.log(Response)})
+    }
+    catch(err){
+
+    }
+    finally{
+        document.getElementById("button_id").disabled = false 
+    }
+}
+
+
+
+
